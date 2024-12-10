@@ -30,14 +30,26 @@
         }
         nav a{
             color: rgb(255, 255, 255);
+            padding: 4px 10px;
             text-decoration: none;
             
         }
         nav a:hover{
-            background-color: #ffb300;
-            padding: auto;
+            background-color: #ff00b3;
+            padding: 4px 10px;
             border-radius: 8px;
 
+        }
+        .container{
+            max-width: 1024;
+
+        }
+        section{
+            margin-bottom: 20px;
+
+        }
+        section h3{
+            border-bottom: 2px solid black;
         }
     </style>
 </head>
@@ -51,5 +63,21 @@
         <a href="http://facebook.com">facebook</a>
         <a href="http://twitter.com">Twitter</a>
     </nav>
+    <div class="container">
+        <section id="html">
+            <div class="grid">
+                <div class="card">
+                    <h3>What is HTMl?</h3>
+                    
+                    <p>Html is Hypertext markup language. It is used to create web pages.</p>
+                </div>
+                <div class="card">
+                    <h3>What is CSS?</h3>
+                    <p>CSS is used for styling the web pages</p>
+                </div>
+            </div>
+        </section>
+    </div>
+   
 </body>
 </html>
