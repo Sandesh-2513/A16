@@ -42,14 +42,24 @@
         }
         .container{
             max-width: 1024;
+            margin:auto
 
         }
         section{
             margin-bottom: 20px;
 
         }
-        section h3{
+        section h2{
             border-bottom: 2px solid black;
+        }
+        .grid{
+            display: grid;
+            gap:12px;
+            grid-template-columns:  repeat(auto-fit,minmax(300px,1fr));
+        }
+        .card{
+            border-radius: 2px solid black;
+
         }
     </style>
 </head>
@@ -59,16 +69,17 @@
         <p>Your journey with techspire</p>
     </header>
     <nav>
-        <a href="http://google.com">google</a>
+        <a href="http://google.com"> google </a>
         <a href="http://facebook.com">facebook</a>
         <a href="http://twitter.com">Twitter</a>
     </nav>
     <div class="container">
         <section id="html">
+            <h2>HTML</h2>
             <div class="grid">
                 <div class="card">
                     <h3>What is HTMl?</h3>
-                    
+
                     <p>Html is Hypertext markup language. It is used to create web pages.</p>
                 </div>
                 <div class="card">
@@ -78,6 +89,16 @@
             </div>
         </section>
     </div>
-   
+    <div class="details">
+        <h1>Contact Form</h1>
+        <form  >
+        <label>Username:</label> <input type="username"><br>
+        <label>Password:</label> <input type="password" name="password" id="password"><br>
+        <label>phone no:</label> <input type="text"><br>
+        <label>location:</label> <input type="username"><br>
+        <label>Date of birth:</label> <input type="datetime" name="dob" id="date"><br>
+        
+        </form>
+    </div>
 </body>
 </html>
