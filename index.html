@@ -42,7 +42,8 @@
         }
         .container{
             max-width: 1024;
-            margin:auto
+            margin:auto;
+            padding: 9px 10px;
 
         }
         section{
@@ -52,15 +53,35 @@
         section h2{
             border-bottom: 2px solid black;
         }
+        
         .grid{
             display: grid;
             gap:12px;
             grid-template-columns:  repeat(auto-fit,minmax(300px,1fr));
         }
         .card{
-            border-radius: 2px solid black;
+            border: 2px solid black;
+            border-radius: 12px;
+            padding: 12px;
 
         }
+        .card:hover{
+            size: 10px;
+            box-shadow: 0 10px 10px rgba(0,0,0,0.60), 0 45px 26px rgba(0,0,0,0.14);
+        }
+footer{
+    text-align: center;
+    background-color: #b0ef1e;
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    position: sticky;
+    bottom: 0;
+}
+
+.grid-form{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit,minmax(300px,1fr));
+}
     </style>
 </head>
 <body>
@@ -86,19 +107,53 @@
                     <h3>What is CSS?</h3>
                     <p>CSS is used for styling the web pages</p>
                 </div>
+                <div class="card">
+                    <h3>What is HTMl?</h3>
+
+                    <p>Html is Hypertext markup language. It is used to create web pages.</p>
+                </div>
+                <div class="card">
+                    <h3>What is CSS?</h3>
+                    <p>CSS is used for styling the web pages</p>
+                </div>
+                <div class="card">
+                    <h3>What is HTMl?</h3>
+
+                    <p>Html is Hypertext markup language. It is used to create web pages.</p>
+                </div>
+                <div class="card">
+                    <h3>What is CSS?</h3>
+                    <p>CSS is used for styling the web pages</p>
+                </div>
+                
+
             </div>
         </section>
-    </div>
-    <div class="details">
         <h1>Contact Form</h1>
-        <form  >
-        <label>Username:</label> <input type="username"><br>
-        <label>Password:</label> <input type="password" name="password" id="password"><br>
-        <label>phone no:</label> <input type="text"><br>
-        <label>location:</label> <input type="username"><br>
-        <label>Date of birth:</label> <input type="datetime" name="dob" id="date"><br>
-        
+        <form action="#" method="post" class="form">
+            <div class="grid-form">
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" placeholder="Enter Your name" name="name" id="name" 
+                    style="padding: 10px ; width:100%; margin-top:4px; border: 1px solid black; border-radius:8px;"
+                    required>
+                </div>
+                <div>
+                    <label for="name">Email:</label>
+                    <input type="email" placeholder="Enter Your Email Address" name="email" id="email" 
+                    style="padding: 10px; width:100%; margin-top:4px; border: 1px solid black; border-radius:8px;"
+                    required>
+                </div>
+            </div>
         </form>
     </div>
+
+
+        
+
+    <footer>
+        <p>&copy; Copyright of Techspire</p>
+    </footer>
+    
 </body>
 </html>
